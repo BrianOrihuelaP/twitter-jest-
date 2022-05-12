@@ -43,7 +43,7 @@ describe("Suite de pruebas #2 - Probando servicios", () => {
    const userNames = userService.getAllUsernames([user0,user1,user2])
    expect(userNames).toContain("BrianOrihuelaP");
    expect(userNames).toContain("Luis-99");
-   expect(userNames).toContain("Luis") //con este error nos damos cuenta que efectivamente tenemos una lista con los usernames
+   //expect(userNames).toContain("Luis") //con este error nos damos cuenta que efectivamente tenemos una lista con los usernames
    //se hacen las pruebas para verificar si nuestro servicio funciona de la manera correcta
   })
 
