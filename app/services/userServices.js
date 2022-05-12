@@ -7,6 +7,13 @@ class userService{
         return new user(id,userName,name,"Sin Bio")
         //retornamos un nuebo objeto de la clase usuario con los parametros del metodo estatico con la bio por defecto
     }
+
+    static getInfo(user){
+        const userInfo = Object.values(user) 
+        //esta funcion me regresa un array con solo los values del objeto
+        return userInfo
+        //retorno la constante la cual sera capturada por la constante que hace la petición a la función
+    }
 }
 
 module.exports = userService
