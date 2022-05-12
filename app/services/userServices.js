@@ -14,6 +14,22 @@ class userService{
         return userInfo
         //retorno la constante la cual sera capturada por la constante que hace la petición a la función
     }
+
+    static updateUserUsername(user,username){
+        user.setUsername = username
+        //como bien sabemos, el metodo creado en la clase set, puede actualizar  los atributos que contengan algun set
+    }
+
+    static getAllUsernames(lista){
+        //creamos un objeto que contendra el resultado de map
+        const listaUserNames = lista.map(
+            //map mapea toda la informacion contenida en lista
+            (lista) => lista.username
+            //aqui delimita los campos y solo mapeara lo mencionado, en este caso de la lista solo mapea los username
+            )
+            //por ultimo retorname la lista y se guardara en donde se hizo la peticion
+            return listaUserNames
+    }
 }
 
 module.exports = userService
